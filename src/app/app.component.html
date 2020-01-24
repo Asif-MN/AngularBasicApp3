@@ -1,0 +1,12 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:left">
+  <h1>
+    {{ title }} 
+	</h1>
+ <select (change)="selectChange($event.target.value)">
+	 <option>--Select--</option>
+	 <option *ngFor="let ani of animalnames">{{ani}}</option>
+ </select>
+ <br><br>	
+ <img [src]="animalurl" *ngIf="showimage">
+</div>
